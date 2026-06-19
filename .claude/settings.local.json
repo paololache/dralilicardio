@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find / -maxdepth 6 -iname \"vite-tanstack-config\" -type d)",
+      "Read(//Users/paolo.lache/**)",
+      "Bash(cat /tmp/nitropkg/package/dist/docs/1.deploy/2.providers/21.vercel.md)",
+      "Bash(bun install *)",
+      "Bash(npm install *)",
+      "Bash(VERCEL=1 npx vite build)",
+      "Bash(command -v nvm)",
+      "Read(//usr/local/n/versions/**)",
+      "Bash(brew list *)"
+    ]
+  }
+}

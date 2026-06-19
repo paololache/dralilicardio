@@ -1,0 +1,9 @@
+# Lilicardio — Dra. Liliana Fonseca
+
+> Cardióloga clínica en Lince, Lima. Consultas presenciales y virtuales, diagnóstico preciso y cuidado cardiovascular integral.
+
+La Dra. Liliana Fonseca ofrece atención cardiológica con más de 13 años de experiencia, incluyendo consultas, electrocardiogramas, ecocardiogramas, ecografía doppler y pruebas de esfuerzo, además de paquetes integral, funcional y preventivo.
+
+## Pages
+
+- [Inicio](/): Presentación de la Dra. Liliana Fonseca, servicios, paquetes y contacto para agendar citas.
