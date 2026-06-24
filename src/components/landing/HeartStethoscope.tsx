@@ -2,13 +2,7 @@
  * Decorative heart-with-stethoscope mark, drawn in burgundy.
  * Used as the focal illustration inside gradient image containers.
  */
-export function HeartStethoscope({
-  className,
-  size = 180,
-}: {
-  className?: string;
-  size?: number;
-}) {
+export function HeartStethoscope({ className, size = 180 }: { className?: string; size?: number }) {
   return (
     <svg
       width={size}

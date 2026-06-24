@@ -2,7 +2,6 @@ import { Phone, MapPin, Clock, BadgeCheck } from "lucide-react";
 import { openWhatsApp, PHONE_DISPLAY } from "./brand";
 import { BookingForm } from "./BookingForm";
 
-
 const INFO = [
   { icon: Phone, label: "Teléfono / WhatsApp", value: PHONE_DISPLAY },
   { icon: BadgeCheck, label: "Colegiatura", value: "CMP 101961" },
@@ -34,8 +33,8 @@ export function Contact() {
               Agenda tu cita hoy
             </h2>
             <p className="mx-auto mt-4 max-w-xl font-body text-[18px] leading-relaxed text-pink">
-              Da el primer paso hacia el cuidado de tu corazón. Estoy aquí para
-              acompañarte con la atención que mereces. Consultas presenciales y virtuales.
+              Da el primer paso hacia el cuidado de tu corazón. Estoy aquí para acompañarte con la
+              atención que mereces. Consultas presenciales y virtuales.
             </p>
 
             <button
@@ -48,7 +47,6 @@ export function Contact() {
 
             {/* Selector de fecha y hora */}
             <BookingForm />
-
 
             <div className="mt-12 grid gap-6 border-t border-white/20 pt-10 sm:grid-cols-2 lg:grid-cols-4">
               {INFO.map(({ icon: Icon, label, value }) => (

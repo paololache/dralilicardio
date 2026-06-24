@@ -40,8 +40,7 @@ export const Route = createFileRoute("/")({
             "Cardióloga clínica con más de 13 años de experiencia en prevención, diagnóstico y tratamiento cardiovascular. Atención presencial y virtual en Lima, Perú.",
           url: "https://dralilicardio.com",
           telephone: "+51962411771",
-          image:
-            "https://dralilicardio.com/dra-liliana-fonseca-3.jpg",
+          image: "https://dralilicardio.com/dra-liliana-fonseca-3.jpg",
           medicalSpecialty: "Cardiology",
           hasCredential: "CMP 101961",
           address: {
@@ -55,13 +54,7 @@ export const Route = createFileRoute("/")({
           openingHoursSpecification: [
             {
               "@type": "OpeningHoursSpecification",
-              dayOfWeek: [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-              ],
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
               opens: "08:00",
               closes: "17:30",
             },

@@ -1,28 +1,19 @@
 import { HeartPulse, Activity, ShieldPlus, Stethoscope, Check, Calendar } from "lucide-react";
 import { openWhatsApp, requestBooking } from "./brand";
 
-
 const PACKAGES = [
   {
     icon: HeartPulse,
     name: "Integral",
     tagline: "Evaluación completa del corazón",
-    items: [
-      "Consulta",
-      "Electrocardiograma",
-      "Ecocardiograma doppler",
-    ],
+    items: ["Consulta", "Electrocardiograma", "Ecocardiograma doppler"],
   },
   {
     icon: Activity,
     name: "Funcional",
     tagline: "Cómo responde tu corazón al esfuerzo",
     featured: true,
-    items: [
-      "Consulta cardiológica",
-      "Electrocardiograma",
-      "Prueba de esfuerzo",
-    ],
+    items: ["Consulta cardiológica", "Electrocardiograma", "Prueba de esfuerzo"],
   },
   {
     icon: ShieldPlus,
@@ -59,8 +50,8 @@ export function Packages() {
             Planes pensados para tu corazón
           </h2>
           <p className="mt-4 font-body text-[17px] leading-relaxed text-soft">
-            Elige el paquete que mejor se adapta a tus necesidades. Cada uno reúne
-            estudios y atención especializada en un solo plan.
+            Elige el paquete que mejor se adapta a tus necesidades. Cada uno reúne estudios y
+            atención especializada en un solo plan.
           </p>
         </div>
 
@@ -82,20 +73,14 @@ export function Packages() {
               <div className="flex size-14 items-center justify-center rounded-2xl bg-nude text-burgund transition-colors duration-300 group-hover:bg-burgund group-hover:text-white">
                 <Icon className="size-7" />
               </div>
-              <h3 className="mt-6 font-display text-[28px] leading-tight text-burgund">
-                {name}
-              </h3>
-              <p className="mt-2 font-body text-[15px] leading-relaxed text-soft">
-                {tagline}
-              </p>
+              <h3 className="mt-6 font-display text-[28px] leading-tight text-burgund">{name}</h3>
+              <p className="mt-2 font-body text-[15px] leading-relaxed text-soft">{tagline}</p>
 
               <ul className="mt-6 flex flex-1 flex-col gap-3">
                 {items.map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <Check className="mt-0.5 size-4 shrink-0 text-pink" />
-                    <span className="font-body text-[15px] leading-snug text-ink/80">
-                      {item}
-                    </span>
+                    <span className="font-body text-[15px] leading-snug text-ink/80">{item}</span>
                   </li>
                 ))}
               </ul>

@@ -4,12 +4,7 @@ interface CubaFlagProps {
 
 export function CubaFlag({ className }: CubaFlagProps) {
   return (
-    <svg
-      viewBox="0 0 30 20"
-      className={className}
-      role="img"
-      aria-label="Bandera de Cuba"
-    >
+    <svg viewBox="0 0 30 20" className={className} role="img" aria-label="Bandera de Cuba">
       <rect width="30" height="20" fill="#fff" />
       <rect width="30" height="4" y="0" fill="#0050a4" />
       <rect width="30" height="4" y="8" fill="#0050a4" />

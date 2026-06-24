@@ -21,8 +21,8 @@ export function Footer() {
             className="mx-auto h-12 w-auto sm:h-14 lg:mx-0 lg:h-16"
           />
           <p className="mt-2 max-w-sm font-body text-[15px] text-pink">
-            Dra. Liliana Fonseca · Especialista en Cardiología. Escuchar tu corazón es entender
-            tu vida.
+            Dra. Liliana Fonseca · Especialista en Cardiología. Escuchar tu corazón es entender tu
+            vida.
           </p>
         </div>
 

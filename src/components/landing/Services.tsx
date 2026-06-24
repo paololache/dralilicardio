@@ -88,8 +88,8 @@ export function Services() {
             Cuidado cardiovascular completo
           </h2>
           <p className="mt-4 font-body text-[17px] leading-relaxed text-soft">
-            Servicios especializados diseñados para acompañarte en cada etapa del cuidado
-            de tu corazón.
+            Servicios especializados diseñados para acompañarte en cada etapa del cuidado de tu
+            corazón.
           </p>
         </div>
 
