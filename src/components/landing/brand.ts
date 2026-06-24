@@ -44,9 +44,7 @@ export function openWhatsAppWithMessage(message: string) {
 // Dispatch a booking request for a given package and scroll to contact.
 export function requestBooking(packageName: string) {
   if (typeof window === "undefined") return;
-  window.dispatchEvent(
-    new CustomEvent(BOOKING_EVENT, { detail: { packageName } })
-  );
+  window.dispatchEvent(new CustomEvent(BOOKING_EVENT, { detail: { packageName } }));
   const el = document.getElementById("contacto");
   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 }

@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -88,16 +89,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Lilicardio | Dra. Liliana Fonseca — Cardióloga" },
       {
         property: "og:description",
-          content:
-            "Escuchar tu corazón es entender tu vida. Cardiología de confianza con atención personalizada.",
+        content:
+          "Escuchar tu corazón es entender tu vida. Cardiología de confianza con atención personalizada.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Lilicardio" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Lilicardio | Dra. Liliana Fonseca — Cardióloga" },
-      { name: "twitter:description", content: "Escuchar tu corazón es entender tu vida. Cardiología de confianza con atención personalizada." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eba5f50b-84c3-408f-8a7b-87f1f3efd30d/id-preview-846d1996--fbe55703-b781-467a-8b9c-c8390d89e976.lovable.app-1780702194544.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eba5f50b-84c3-408f-8a7b-87f1f3efd30d/id-preview-846d1996--fbe55703-b781-467a-8b9c-c8390d89e976.lovable.app-1780702194544.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Escuchar tu corazón es entender tu vida. Cardiología de confianza con atención personalizada.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eba5f50b-84c3-408f-8a7b-87f1f3efd30d/id-preview-846d1996--fbe55703-b781-467a-8b9c-c8390d89e976.lovable.app-1780702194544.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eba5f50b-84c3-408f-8a7b-87f1f3efd30d/id-preview-846d1996--fbe55703-b781-467a-8b9c-c8390d89e976.lovable.app-1780702194544.png",
+      },
     ],
     links: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -127,6 +140,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>

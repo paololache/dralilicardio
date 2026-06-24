@@ -41,13 +41,10 @@ export function Hero() {
             Escuchar tu corazón es entender tu vida
           </p>
 
-
-
-
           <p className="mt-6 max-w-xl font-body text-[17px] leading-relaxed text-ink/80">
-            Cardióloga clínica con más de 13 años de experiencia en prevención,
-            diagnóstico y tratamiento cardiovascular. Atención personalizada,
-            presencial y virtual, con el más alto nivel de cuidado.
+            Cardióloga clínica con más de 13 años de experiencia en prevención, diagnóstico y
+            tratamiento cardiovascular. Atención personalizada, presencial y virtual, con el más
+            alto nivel de cuidado.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -69,7 +66,10 @@ export function Hero() {
         {/* Image column */}
         <div className="relative animate-fade-up [animation-delay:150ms]">
           {/* Decorative circle outside top-right */}
-          <div className="absolute -right-5 -top-5 z-10 size-16 rounded-full bg-pink" aria-hidden="true" />
+          <div
+            className="absolute -right-5 -top-5 z-10 size-16 rounded-full bg-pink"
+            aria-hidden="true"
+          />
 
           <div className="relative mx-auto aspect-[2/3] w-full max-w-[440px] overflow-hidden rounded-[24px] bg-[linear-gradient(135deg,#FFDBD1_0%,#FA9EBC_100%)] shadow-[0_30px_60px_-25px_rgba(87,2,40,0.4)] lg:aspect-[4/5] lg:max-w-[560px]">
             <img

@@ -1,4 +1,12 @@
-import { Stethoscope, Award, CheckCircle2, GraduationCap, Languages, PlayCircle, FileCheck } from "lucide-react";
+import {
+  Stethoscope,
+  Award,
+  CheckCircle2,
+  GraduationCap,
+  Languages,
+  PlayCircle,
+  FileCheck,
+} from "lucide-react";
 import { useState } from "react";
 import draAbout from "@/assets/dra-liliana-fonseca-3.jpg";
 import welcomeVideo from "@/assets/video-bienvenida.mp4";
@@ -76,7 +84,8 @@ export function About() {
 
           {/* Breve bienvenida */}
           <p className="mt-5 text-center font-body text-[15px] leading-relaxed text-ink/70">
-            Soy la Dra. Liliana Fonseca, cardióloga clínica con más de 13 años cuidando corazones en Lima.
+            Soy la Dra. Liliana Fonseca, cardióloga clínica con más de 13 años cuidando corazones en
+            Lima.
           </p>
 
           {/* Botón Ver presentación */}
@@ -104,16 +113,14 @@ export function About() {
           </h2>
 
           <p className="mt-6 font-body text-[17px] leading-relaxed text-ink/80">
-            Soy la Dra. Liliana Fonseca, médica cardióloga clínica con más de 13 años de
-            experiencia dedicada a la prevención, diagnóstico y tratamiento de las
-            enfermedades cardiovasculares. Mi objetivo es brindar una atención integral y
-            personalizada, apoyada en estudios cardiológicos y en la mejor evidencia
-            científica.
+            Soy la Dra. Liliana Fonseca, médica cardióloga clínica con más de 13 años de experiencia
+            dedicada a la prevención, diagnóstico y tratamiento de las enfermedades
+            cardiovasculares. Mi objetivo es brindar una atención integral y personalizada, apoyada
+            en estudios cardiológicos y en la mejor evidencia científica.
           </p>
           <p className="mt-4 font-body text-[17px] leading-relaxed text-ink/80">
             Creo en una medicina cercana y humana, basada en la confianza, la empatía y el
-            acompañamiento continuo en cada etapa del cuidado cardiovascular de mis
-            pacientes.
+            acompañamiento continuo en cada etapa del cuidado cardiovascular de mis pacientes.
           </p>
 
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">

@@ -16,8 +16,12 @@ export function Stats() {
               i > 0 ? "lg:border-l lg:border-white/20" : ""
             }`}
           >
-            <span className="font-display text-[26px] leading-none text-white break-words sm:text-[32px] lg:text-[40px]">{s.value}</span>
-            <span className="mt-2 font-body text-[12px] tracking-wide text-pink sm:text-[13px] lg:text-[14px]">{s.label}</span>
+            <span className="font-display text-[26px] leading-none text-white break-words sm:text-[32px] lg:text-[40px]">
+              {s.value}
+            </span>
+            <span className="mt-2 font-body text-[12px] tracking-wide text-pink sm:text-[13px] lg:text-[14px]">
+              {s.label}
+            </span>
           </div>
         ))}
       </div>

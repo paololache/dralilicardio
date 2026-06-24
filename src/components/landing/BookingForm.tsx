@@ -5,11 +5,7 @@ import { CalendarIcon, Clock, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   Select,
   SelectContent,
@@ -20,12 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
-import {
-  BOOKING_EVENT,
-  PACKAGE_NAMES,
-  SERVICE_NAMES,
-  openWhatsAppWithMessage,
-} from "./brand";
+import { BOOKING_EVENT, PACKAGE_NAMES, SERVICE_NAMES, openWhatsAppWithMessage } from "./brand";
 
 const TIME_SLOTS = [
   "08:00 a. m.",
@@ -64,8 +55,7 @@ export function BookingForm() {
       if (detail?.packageName) setPkg(detail.packageName);
     }
     window.addEventListener(BOOKING_EVENT, handler as EventListener);
-    return () =>
-      window.removeEventListener(BOOKING_EVENT, handler as EventListener);
+    return () => window.removeEventListener(BOOKING_EVENT, handler as EventListener);
   }, []);
 
   function handleSubmit() {
@@ -103,10 +93,7 @@ export function BookingForm() {
       <div className="mt-7 grid gap-4 sm:grid-cols-2">
         {/* Nombre */}
         <div className="sm:col-span-2">
-          <label
-            htmlFor="booking-name"
-            className="mb-1.5 block font-body text-[13px] text-pink/90"
-          >
+          <label htmlFor="booking-name" className="mb-1.5 block font-body text-[13px] text-pink/90">
             Nombre completo (opcional)
           </label>
           <input
@@ -151,22 +138,18 @@ export function BookingForm() {
 
         {/* Fecha */}
         <div>
-          <label className="mb-1.5 block font-body text-[13px] text-pink/90">
-            Fecha
-          </label>
+          <label className="mb-1.5 block font-body text-[13px] text-pink/90">Fecha</label>
           <Popover>
             <PopoverTrigger asChild>
               <button
                 className={cn(
                   fieldBase,
                   "flex items-center gap-2 text-left",
-                  !date && "text-pink/70"
+                  !date && "text-pink/70",
                 )}
               >
                 <CalendarIcon className="size-4 shrink-0" />
-                {date
-                  ? format(date, "d 'de' MMMM yyyy", { locale: es })
-                  : "Elige una fecha"}
+                {date ? format(date, "d 'de' MMMM yyyy", { locale: es }) : "Elige una fecha"}
               </button>
             </PopoverTrigger>
             <PopoverContent className="w-auto p-0" align="start">
@@ -189,9 +172,7 @@ export function BookingForm() {
 
         {/* Hora */}
         <div>
-          <label className="mb-1.5 block font-body text-[13px] text-pink/90">
-            Hora
-          </label>
+          <label className="mb-1.5 block font-body text-[13px] text-pink/90">Hora</label>
           <Select value={time} onValueChange={setTime}>
             <SelectTrigger className={cn(fieldBase, "h-auto justify-between")}>
               <span className="flex items-center gap-2">

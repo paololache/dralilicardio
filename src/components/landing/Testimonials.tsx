@@ -6,12 +6,7 @@ import {
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Autoplay from "embla-carousel-autoplay";
 
 const TESTIMONIALS = [
@@ -71,8 +66,7 @@ export function Testimonials() {
   const scrollNext = useCallback(() => api?.scrollNext(), [api]);
   const scrollTo = useCallback((index: number) => api?.scrollTo(index), [api]);
 
-  const activeTestimonial =
-    openIndex !== null ? TESTIMONIALS[openIndex] : null;
+  const activeTestimonial = openIndex !== null ? TESTIMONIALS[openIndex] : null;
   const needsTruncation = (text: string) => text.length > MAX_PREVIEW_CHARS;
 
   return (
@@ -104,16 +98,11 @@ export function Testimonials() {
           >
             <CarouselContent className="-ml-4">
               {TESTIMONIALS.map((t, index) => (
-                <CarouselItem
-                  key={index}
-                  className="pl-4 md:basis-1/2 lg:basis-1/2"
-                >
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/2">
                   <figure className="relative h-full rounded-[20px] bg-white p-8 shadow-[0_12px_30px_-18px_rgba(87,2,40,0.25)] flex flex-col">
                     <Quote className="size-9 text-pink shrink-0" />
                     <blockquote className="mt-4 flex-1 font-body text-[17px] italic leading-relaxed text-ink/80">
-                      “{needsTruncation(t.text)
-                        ? truncateText(t.text)
-                        : t.text}”
+                      “{needsTruncation(t.text) ? truncateText(t.text) : t.text}”
                     </blockquote>
                     {needsTruncation(t.text) && (
                       <button
@@ -124,15 +113,10 @@ export function Testimonials() {
                       </button>
                     )}
                     <figcaption className="mt-6 flex items-center justify-between border-t border-pink/20 pt-5">
-                      <span className="font-display text-[24px] text-burgund">
-                        {t.name}
-                      </span>
+                      <span className="font-display text-[24px] text-burgund">{t.name}</span>
                       <span className="flex gap-0.5">
                         {Array.from({ length: 5 }).map((_, i) => (
-                          <Star
-                            key={i}
-                            className="size-4 fill-pink text-pink"
-                          />
+                          <Star key={i} className="size-4 fill-pink text-pink" />
                         ))}
                       </span>
                     </figcaption>
@@ -165,9 +149,7 @@ export function Testimonials() {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={`h-2.5 rounded-full transition-all duration-300 ${
-                  index === current
-                    ? "w-8 bg-burgund"
-                    : "w-2.5 bg-pink/40 hover:bg-pink/70"
+                  index === current ? "w-8 bg-burgund" : "w-2.5 bg-pink/40 hover:bg-pink/70"
                 }`}
                 aria-label={`Ir al testimonio ${index + 1}`}
               />
@@ -188,10 +170,7 @@ export function Testimonials() {
                   </DialogTitle>
                   <span className="flex gap-0.5">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className="size-5 fill-pink text-pink"
-                      />
+                      <Star key={i} className="size-5 fill-pink text-pink" />
                     ))}
                   </span>
                 </div>
